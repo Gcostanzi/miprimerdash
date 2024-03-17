@@ -1,1 +1,1 @@
-web ; python MiPrimerDash.py migrate && gunicorn miprimerdas.wsgl
+web : python MiPrimerDash.py migrate && gunicorn miprimerdas.wsgl
