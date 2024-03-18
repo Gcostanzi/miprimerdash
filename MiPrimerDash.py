@@ -7,11 +7,7 @@
 
 
 #Instalación
-get_ipython().system('pip install jupyter-dash')
-get_ipython().system('pip install dash')
-get_ipython().system('pip install dash_core_components')
-get_ipython().system('pip install dash_html_components')
-get_ipython().system('pip install dash_table')
+
 
 
 # In[2]:
@@ -21,11 +17,12 @@ import pandas as pd
 import numpy as np
 
 # import dash
-from jupyter_dash import JupyterDash
+# from jupyter_dash import JupyterDash
+import dash
 import dash_core_components as dcc
-import dash_html_components as html
+from dash import html
 from dash.dependencies import Input,Output,State
-import dash_table
+from dash import dash_table
 
 import plotly.express as px
 
@@ -40,7 +37,7 @@ import plotly.express as px
 # In[14]:
 
 
-app = JupyterDash()
+app = dash.Dash()
 
 
 # In[5]:
